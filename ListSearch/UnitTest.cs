@@ -31,6 +31,7 @@ namespace ListSearch
         }
 
         [Test]
+        //分頁列表_第二列第一筆_查詢正確版
         public void Test_分頁列表_第二列第一筆_查詢正確版()
         {
             //arrange
@@ -48,6 +49,7 @@ namespace ListSearch
 
         }
         [Test]
+        //分頁列表_第二列第一筆_查詢錯誤版
         public void Test_分頁列表_第二列第一筆_查詢錯誤版()
         {
             //arrange
@@ -66,6 +68,7 @@ namespace ListSearch
         }
         [TestCase("Id")]
         [TestCase("Name")]
+        //Test_排序列表_針對欄位降序
         public void Test_排序列表_針對欄位降序(string orderName)
         {
             //arrange
@@ -91,6 +94,7 @@ namespace ListSearch
         }
         
         [Test]
+        //查詢列表_查詢字串1
         public void Test_查詢列表_查詢字串1()
         {
             //arrange
@@ -111,6 +115,7 @@ namespace ListSearch
             Assert.AreEqual(expected, act);
         }
         [Test]
+        //查詢列表_查詢_1_忽略SonModelA
         public void Test_查詢列表_查詢_1_忽略SonModelA()
         {
             //arrange
@@ -127,6 +132,7 @@ namespace ListSearch
             Assert.AreEqual(expected, act);
         }
         [Test]
+        //查詢列表_查詢_1_階層查詢到0
         public void Test_查詢列表_查詢_1_階層查詢到0()
         {
             //arrange
@@ -145,6 +151,7 @@ namespace ListSearch
 
         [TestCase("1 C"," ")]
         [TestCase("1_C","_")]
+        //查詢列表_查詢_1跟C_忽略SonModelA
         public void Test_查詢列表_查詢_1跟C_忽略SonModelA(string search,string breakString)
         {
             //arrange
@@ -164,6 +171,7 @@ namespace ListSearch
             //assert
             Assert.AreEqual(expected, act);
         }
+        //集合所有功能
         public void Test_集合所有功能() 
         {
             //arrange
